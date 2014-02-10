@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>2.0</jspversion>
+    <shortname>message</shortname>
+    <uri>jprogrammers.com</uri>
+    <info>language taglib</info>
+    <tag>
+        <name>message</name>
+        <tagclass>com.jprogrammers.tag.Message</tagclass>
+        <bodycontent>empty</bodycontent>
+        <attribute>
+            <name>key</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
