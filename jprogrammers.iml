@@ -25,6 +25,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="spring-aop-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="javax.servlet-api-3.0.1" level="project" />
+    <orderEntry type="library" name="javax.faces-2.2.1" level="project" />
+    <orderEntry type="library" name="primefaces-4.0" level="project" />
+    <orderEntry type="library" name="primefaces-4.0" level="project" />
   </component>
 </module>
 

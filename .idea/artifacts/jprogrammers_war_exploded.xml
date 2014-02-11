@@ -9,6 +9,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="spring-aop-4.0.1.RELEASE" />
+          <element id="library" level="project" name="javax.faces-2.2.1" />
+          <element id="library" level="project" name="primefaces-4.0" />
         </element>
       </element>
     </root>
