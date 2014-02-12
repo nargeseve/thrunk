@@ -11,9 +11,36 @@
 
 </h:head>
 <h:body>
-    <h:form>
-        <p:editor/>
-    </h:form>
+    <p:tabView id="tabView">
+        <p:tab id="tab1" title="Article">
+            <h:form>
+                <p:editor/>
+            </h:form>
+        </p:tab>
+
+        <p:tab id="tab2" title="Courses">
+            <h:panelGrid columns="1" cellpadding="10">
+                <h:outputText id="tab2Text" value="Special courses goes here!!"/>
+            </h:panelGrid>
+        </p:tab>
+
+        <p:tab id="tab3" title="Categories and Tags">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputText id="tab3Text" value="Tags"/>
+                <h:form id="form">
+
+                    <p:tree value="#{categoriesTree.root}" var="node" id="tree">
+                        <p:treeNode id="treeNode">
+                            <h:outputText value="#{node}" id="lblNode"/>
+                        </p:treeNode>
+                    </p:tree>
+
+                </h:form>
+            </h:panelGrid>
+        </p:tab>
+
+    </p:tabView>
+
 </h:body>
 
 </html>
