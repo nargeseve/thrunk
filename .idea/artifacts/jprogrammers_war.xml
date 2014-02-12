@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" build-on-make="true" name="jprogrammers:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="jprogrammers.war">
+    <output-path>$PROJECT_DIR$/../apache-tomcat-7.0.47/webapps</output-path>
+    <root id="archive" name="ROOT.war">
       <element id="artifact" artifact-name="jprogrammers:war exploded" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="lib">
@@ -9,7 +9,11 @@
           <element id="library" level="project" name="javax.faces-2.2.1" />
           <element id="library" level="project" name="primefaces-4.0" />
         </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="jprogrammers.com" />
+        </element>
       </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
     </root>
   </artifact>
 </component>
