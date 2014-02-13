@@ -14,7 +14,7 @@
     <p:tabView id="tabView">
         <p:tab id="tab1" title="Article">
             <h:form>
-                <p:editor/>
+                <p:editor value="#{fa.java}"/>
             </h:form>
         </p:tab>
 
@@ -29,7 +29,7 @@
                 <h:outputText id="tab3Text" value="Tags"/>
                 <h:form id="form">
 
-                    <p:tree value="#{categoriesTree.root}" var="node" id="tree">
+                    <p:tree value="#{categoriesTreeBean.root}" var="node" id="tree">
                         <p:treeNode id="treeNode">
                             <h:outputText value="#{node}" id="lblNode"/>
                         </p:treeNode>

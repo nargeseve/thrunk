@@ -1,13 +1,15 @@
-package com.jprogrammers.jsf.beans;
+package com.jprogrammers.beans;
 
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
 
+import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 
 /**
  * Created by User on 12/02/14.
  */
+@ManagedBean
 public class CategoriesTreeBean implements Serializable {
 
     private TreeNode root;
