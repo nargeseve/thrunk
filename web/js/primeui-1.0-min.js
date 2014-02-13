@@ -582,8 +582,8 @@ this.itemsContainer=$('<ul class="pui-dropdown-items pui-dropdown-list ui-widget
 this.disabled=this.element.prop("disabled");
 this.choices=this.element.children("option");
 this.optGroupsSize=this.itemsContainer.children("li.puiselectonemenu-item-group").length;
-if(this.options.filter){this.filterContainer=$('<div class="pui-dropdown-filterd-container" />').prependTo(this.panel);
-this.filterInput=$('<input type="text" autocomplete="off" class="pui-dropdown-filterd pui-inputtext ui-widget ui-state-default ui-corner-all" />').appendTo(this.filterContainer);
+if(this.options.filter){this.filterContainer=$('<div class="pui-dropdown-filter-container" />').prependTo(this.panel);
+this.filterInput=$('<input type="text" autocomplete="off" class="pui-dropdown-filter pui-inputtext ui-widget ui-state-default ui-corner-all" />').appendTo(this.filterContainer);
 this.filterContainer.append('<span class="ui-icon ui-icon-search"></span>')
 }this._generateItems();
 var e=this,d=this.choices.filter(":selected");
@@ -1651,8 +1651,8 @@ if(a.label){b.append('<option value="'+a.value+'">'+a.label+"</option>")
 }else{b.append('<option value="'+a+'">'+a+"</option>")
 }}},_createList:function(g,l,j,b){g.wrap('<div class="ui-helper-hidden"></div>');
 var d=$('<div class="pui-picklist-listwrapper '+l+'"></div>'),f=$('<ul class="ui-widget-content pui-picklist-list pui-inputtext"></ul>'),k=g.children("option");
-if(this.options.filter){d.append('<div class="pui-picklist-filterd-container"><input type="text" class="pui-picklist-filterd" /><span class="ui-icon ui-icon-search"></span></div>');
-d.find("> .pui-picklist-filterd-container > input").puiinputtext()
+if(this.options.filter){d.append('<div class="pui-picklist-filter-container"><input type="text" class="pui-picklist-filter" /><span class="ui-icon ui-icon-search"></span></div>');
+d.find("> .pui-picklist-filter-container > input").puiinputtext()
 }if(j){d.append('<div class="pui-picklist-caption ui-widget-header ui-corner-tl ui-corner-tr">'+j+"</div>");
 f.addClass("ui-corner-bottom")
 }else{f.addClass("ui-corner-all")
@@ -1703,9 +1703,9 @@ if($(this).closest(".pui-picklist-listwrapper").hasClass("pui-picklist-source"))
 }PUI.clearSelection()
 });
 if(this.options.filter){this._setupFilterMatcher();
-this.element.find("> .pui-picklist-source > .pui-picklist-filterd-container > input").on("keyup",function(b){a._filter(this.value,a.sourceList)
+this.element.find("> .pui-picklist-source > .pui-picklist-filter-container > input").on("keyup",function(b){a._filter(this.value,a.sourceList)
 });
-this.element.find("> .pui-picklist-target > .pui-picklist-filterd-container > input").on("keyup",function(b){a._filter(this.value,a.targetList)
+this.element.find("> .pui-picklist-target > .pui-picklist-filter-container > input").on("keyup",function(b){a._filter(this.value,a.targetList)
 })
 }if(this.options.dragdrop){this.element.find("> .pui-picklist-listwrapper > ul.pui-picklist-list").sortable({cancel:".ui-state-disabled",connectWith:"#"+this.element.attr("id")+" .pui-picklist-list",revert:true,containment:this.element,update:function(b,c){a.unselectItem(c.item);
 a._saveState()
