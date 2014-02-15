@@ -11,35 +11,18 @@
 
 </h:head>
 <h:body>
-    <p:tabView id="tabView">
-        <p:tab id="tab1" title="Article">
-            <h:form>
-                <p:editor value="#{fa.java}"/>
-            </h:form>
-        </p:tab>
 
-        <p:tab id="tab2" title="Courses">
-            <h:panelGrid columns="1" cellpadding="10">
-                <h:outputText id="tab2Text" value="Special courses goes here!!"/>
-            </h:panelGrid>
-        </p:tab>
+    <p:layout fullPage="true">
 
-        <p:tab id="tab3" title="Categories and Tags">
-            <h:panelGrid columns="2" cellpadding="10">
-                <h:outputText id="tab3Text" value="Tags"/>
-                <h:form id="form">
+        <p:layoutUnit position="east" style="direction: rtl" size="350" header="Right" collapsible="true" effect="drop">
+            <h:outputText value="Right unit content." />
+        </p:layoutUnit>
 
-                    <p:tree value="#{categoriesTreeBean.root}" var="node" id="tree">
-                        <p:treeNode id="treeNode">
-                            <h:outputText value="#{node}" id="lblNode"/>
-                        </p:treeNode>
-                    </p:tree>
+        <p:layoutUnit style="direction: rtl" header="Control panel" position="center">
+            <h:outputText value="Center unit content." />
+        </p:layoutUnit>
 
-                </h:form>
-            </h:panelGrid>
-        </p:tab>
-
-    </p:tabView>
+    </p:layout>
 
 </h:body>
 
