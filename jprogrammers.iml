@@ -14,6 +14,15 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="4e248b9d-13b5-43d1-a965-2ad45f47c4a7" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -28,6 +37,7 @@
     <orderEntry type="library" name="javax.faces-2.2.1" level="project" />
     <orderEntry type="library" name="primefaces-4.0" level="project" />
     <orderEntry type="library" name="primefaces-4.0" level="project" />
+    <orderEntry type="library" name="Hibernate" level="project" />
   </component>
 </module>
 

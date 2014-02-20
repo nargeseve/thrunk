@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</h:head>
+
+<h:body>
+    <p:layout fullPage="true">
+        <p:layoutUnit position="east" size="350" header="#{fa.items}" collapsible="true" effect="drop">
+            <h:form>
+                <p:panelMenu>
+                    <p:submenu label="#{fa.content}">
+                        <p:menuitem value="#{fa.article}" url="/pages/cpanel/article.xhtml"/>
+                        <p:menuitem value="#{fa.tag}" />
+                    </p:submenu>
+                    <p:submenu label="#{fa.user}">
+                        <p:menuitem value="#{fa.add}" />
+                    </p:submenu>
+                </p:panelMenu>
+            </h:form>
+        </p:layoutUnit>
+    </p:layout>
+</h:body>
+
+</html>

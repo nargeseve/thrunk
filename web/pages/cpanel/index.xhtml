@@ -8,18 +8,17 @@
       xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-
+    <title>#{fa.cpanel}</title>
 </h:head>
-<h:body>
+
+<ui:include src="/pages/cpanel/header.xhtml"/>
+
+<h:body dir="rtl">
 
     <p:layout fullPage="true">
 
-        <p:layoutUnit position="east" style="direction: rtl" size="350" header="Right" collapsible="true" effect="drop">
-            <h:outputText value="Right unit content." />
-        </p:layoutUnit>
-
-        <p:layoutUnit style="direction: rtl" header="Control panel" position="center">
-            <h:outputText value="Center unit content." />
+        <p:layoutUnit header="#{fa.cpanel}" position="center">
+            <h1>Jprogrammers</h1>
         </p:layoutUnit>
 
     </p:layout>

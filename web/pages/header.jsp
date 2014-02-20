@@ -12,7 +12,7 @@
     <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/js/primeui-1.0-min.js"></script>
-    <title><fa:message key="web-title"/></title>
+    <title><fa:message key="web_title"/></title>
 </head>
 <body>
 <div class="main-wrapper">
