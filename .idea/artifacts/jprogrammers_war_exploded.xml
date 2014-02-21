@@ -12,6 +12,7 @@
           <element id="library" level="project" name="javax.faces-2.2.1" />
           <element id="library" level="project" name="primefaces-4.0" />
           <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="project" name="tile" />
         </element>
       </element>
     </root>

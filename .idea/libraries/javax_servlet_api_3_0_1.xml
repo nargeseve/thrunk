@@ -1,6 +1,9 @@
 <component name="libraryTable">
   <library name="javax.servlet-api-3.0.1">
-    <CLASSES />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api.jar!/" />
+    </CLASSES>
     <JAVADOC />
     <SOURCES />
   </library>

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="tile">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-digester-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tiles-api-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tiles-core-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tiles-jsp-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tiles-servlet-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tiles-template-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
