@@ -22,7 +22,7 @@ public class ArticleController {
         if(article == null)
             return "404";
         model.addAttribute("article", article);
-        return "articles";
+        return "article";
     }
 
 }

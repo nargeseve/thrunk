@@ -18,7 +18,7 @@
         <put-attribute name="main" value="/pages/index.jsp" />
     </definition>
 
-    <definition name="articles" extends="base.definition">
+    <definition name="article" extends="base.definition">
         <put-attribute name="title" value="Article" />
         <put-attribute name="main" value="/pages/article.jsp" />
     </definition>
