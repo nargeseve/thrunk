@@ -1,6 +1,6 @@
-    <div class="footer-panel">
-        <fa:message key="copyright"/>
-    </div>
+<%@include file="init.jsp"%>
+<div class="footer-panel">
+    <fa:message key="copyright"/>
 </div>
 
 <script type="text/javascript">
@@ -12,5 +12,3 @@
         $('.footer-panel').puipanel();
     });
 </script>
-</body>
-</html>

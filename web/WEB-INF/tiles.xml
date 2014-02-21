@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+                template="/pages/common/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="head" value="/pages/common/head.jsp" />
+        <put-attribute name="menu" value="/pages/common/menu.jsp" />
+        <put-attribute name="right" value="/pages/common/right.jsp" />
+        <put-attribute name="main" value="" />
+        <put-attribute name="footer" value="/pages/common/footer.jsp" />
+    </definition>
+
+    <definition name="index" extends="base.definition">
+        <put-attribute name="title" value="jprogrammers" />
+        <put-attribute name="main" value="/pages/index.jsp" />
+    </definition>
+
+    <definition name="articles" extends="base.definition">
+        <put-attribute name="title" value="Article" />
+        <put-attribute name="main" value="/pages/article.jsp" />
+    </definition>
+    <definition name="404" extends="base.definition">
+        <put-attribute name="title" value="Not Found" />
+        <put-attribute name="main" value="/pages/common/404.jsp" />
+    </definition>
+</tiles-definitions>
